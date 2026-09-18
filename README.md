@@ -47,8 +47,63 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
 
 ## 🧪 Methodology and steps taken
 
-# 1.  **whois**
-Querying the public domain registration record to find who owns the domain, when it was registered, and its name servers (networkwalks)
+ 1.  **whois.**
+    
+       *Querying the public domain registration record to find who owns the domain, when it was registered, and its name servers (networkwalks).*
+
+![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%20_16_09_2026_23_29_40.png)
+
+
+
+
+
+2. **whatweb.**
+
+     *Fingerprint the technologies running on the website: web server, CMS, plugins, frameworks and IP address.*
+
+   ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_00_54_42.png)
+
+   
+   
+
+
+3. **nslookup.**
+
+     *Resolve the domain name to its IP address using DNS.*
+
+   ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_00_09.png)
+
+   
+   
+
+
+4. **curl -I.**
+
+     *Read the HTTP response headers to see the server banner, status, cookies and redirects.*
+
+   ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_27_48.png)
+   
+
+   
+
+
+5. **wafw00f.**
+
+   *Detect whether a Web Application Firewall (WAF) is protecting the target site.*
+
+
+   ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_23_47.png)
+
+
+
+6. **dnsrecon.**
+
+     *Enumerate all DNS records: name servers, mail servers, SPF, TXT and service (SRV) records.*
+
+
+   ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_36_19.png)
+
+   
 
 
 
