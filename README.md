@@ -166,6 +166,7 @@ A ping scan (nmap -sn 10.0.0.0/24) was run from Zenmap's built-in terminal to sw
 ## IP Addresses of the Live Hosts
 
 The four live hosts identified were:
+
 ●	10.0.0.1
 
 ●	10.0.0.2
@@ -200,15 +201,24 @@ Nmap resolves MAC addresses for hosts on the same local Ethernet segment via ARP
 - technical findings should be always documented clearly
 - reconnaissance and scanning must always be performed within an authorized scope.
 
-  ---
+  
 
-  ## Report
+  ## PENETRATION TESTING REPORT
+
 
   
+
+https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/2e46ac820eceec4884d3570ac001c669d0eb05be/W2-PM1-FINAL-%20Report.pdf
+
+
+
+
 
   ## ⚖️ Disclaimer
 
 The information provided here is meant solely for learning and legitimate and sanctioned research purposes. Note that accessing any computer system(s) without proper consent is a criminal offense in most legal jurisdictions. Every task outlined in this document was carried out exclusively on infrastructure I personally own, networks under my own control, or systems for which I had clear, written approval to test. 
+
+
 
 
 
