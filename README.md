@@ -54,7 +54,7 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
 ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%20_16_09_2026_23_29_40.png)
 
 
-
+---
 
 
 2. **whatweb.**
@@ -64,7 +64,7 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
    ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_00_54_42.png)
 
    
-   
+  --- 
 
 
 3. **nslookup.**
@@ -74,7 +74,7 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
    ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_00_09.png)
 
    
-   
+   ---
 
 
 4. **curl -I.**
@@ -84,7 +84,7 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
    ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_27_48.png)
    
 
-   
+   ---
 
 
 5. **wafw00f.**
@@ -93,7 +93,9 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
 
 
    ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_23_47.png)
+   
 
+---
 
 
 6. **dnsrecon.**
@@ -102,6 +104,8 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
 
 
    ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_36_19.png)
+
+   ---
 
 
 7. **zenmap**
@@ -133,11 +137,16 @@ A ping scan (nmap -sn 10.0.0.0/24) was run from Zenmap's built-in terminal to sw
                                *Figure 1 - Zenmap ping scan (nmap -sn 10.0.0.0/24) showing 4 live hosts out of 256 addresses.*
 
 
+
+
+
                                
 
 
 ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/370cbc3b95627537db6a3b71eadc78055f85b4d0/Topology.png)
                                      *Figure 2 - Zenmap Topology* 
+
+
 
 
                                      
@@ -149,30 +158,73 @@ A ping scan (nmap -sn 10.0.0.0/24) was run from Zenmap's built-in terminal to sw
 
 4 hosts responded as "up" out of the 256 addresses scanned in the 10.0.0.0/24 subnet, as confirmed by Nmap's summary line at the end of the ping scan: "Nmap done: 256 IP addresses (4 hosts up) scanned in 2.09 seconds."
 
+
+
+
  
 
 ## IP Addresses of the Live Hosts
 
 The four live hosts identified were:
 ●	10.0.0.1
+
 ●	10.0.0.2
+
 ●	10.0.0.9
+
 ●	10.0.0.11
+
 These same four addresses also appear as nodes in the Zenmap Topology map (Figures 2 and 3), connected to the scanning host (localhost).
+
+
+
  
 ## MAC Addresses of the Live Hosts
 
 Nmap resolves MAC addresses for hosts on the same local Ethernet segment via ARP. The ping scan output returned the following MAC addresses for three of the four hosts (the fourth, 10.0.0.2, is the scanning machine's own interface, so Nmap does not report a MAC address for itself):
-|IP Address|	MAC Address|	Vendor (from OUI)|
-|----------|-------------|-------------------|
-|10.0.0.1|	52:54:00:12:35:00|	QEMU virtual NIC|
-|10.0.0.2|	Not reported| (local/self)	--|
-|10.0.0.9|	08:00:27:51:76:01|	Oracle VirtualBox virtual NIC|
-|10.0.0.11|	08:00:27:35:58:1A|	Oracle VirtualBox virtual NIC|
+|IP Address|	MAC Address|
+|----------|-------------|
+|10.0.0.1|	52:54:00:12:35:00|
+|10.0.0.2|	Not reported|
+|10.0.0.9|	08:00:27:51:76:01|
+|10.0.0.11|	08:00:27:35:58:1A|
+
+
+---
 
 
 
-🧠 Key Takeaway
+### 💡 Key Takeaways
 
+- The exercise showed that information gathering is an important and fundamental part of cybersecurity that must be used to carefully analyse publicly available information and network responses.
+- technical findings should be always documented clearly
+- reconnaissance and scanning must always be performed within an authorized scope.
+
+  ---
+
+  ## Report
+
+  
+
+  ## ⚖️ Disclaimer
+
+The information provided here is meant solely for learning and legitimate and sanctioned research purposes. Note that accessing any computer system(s) without proper consent is a criminal offense in most legal jurisdictions. Every task outlined in this document was carried out exclusively on infrastructure I personally own, networks under my own control, or systems for which I had clear, written approval to test. 
+
+
+
+# 👤 Author
+
+**Chimanda P Mbangweta**
+
+Cybersecurity Professional B083B
+
+LinkedIn:  https://www.linkedin.com/in/chimanda-p-mbangweta-45972772
+
+________________________________________
+# 📌Project Information
+**Program Name:** *Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pen testing Lab Setup | **Repository:** GitHub*
+
+
+---
  
  
