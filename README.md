@@ -103,7 +103,61 @@ Carry out reconnaissance and foot printing using the following tools in kali lin
 
    ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/blob/153d2429dfdd10f948c0f7222e6617058fa06d1a/VirtualBox_Kali%201_18_09_2026_01_36_19.png)
 
-   
 
+7. **zenmap**
 
+ ### Live Host Identification on the 10.0.0.0/24 Subnet using Zenmap / Nmap
+---
+|Activity|Result|
+|--------------|-------------|
+|Subnet Scanned|	10.0.0.0/24|
+|Scan Type (Discovery)|	nmap -sn 10.0.0.0/24  (Ping Scan)|
+|Follow-up Scans|	nmap -T4 -A -v <host>  (Intense/Service+OS Detection Scan)|
+|Total Addresses| Probed	256|
+|Live Hosts Found|	4|
+|Scan Duration (Ping Scan)|	2.09 seconds|
 
+This report documents a live host discovery exercise performed with Zenmap (the graphical front-end for Nmap). A ping sweep of the local subnet was used to identify which addresses were online, followed by targeted intense scans against each discovered host to gather service, OS and MAC address detail. Screenshots of every scan are included as evidence.
+ 
+### Live Hosts / PCs Found in the Subnet
+A ping scan (nmap -sn 10.0.0.0/24) was run from Zenmap's built-in terminal to sweep every address in the subnet without port-scanning each host. Nmap reported that out of 256 possible addresses, 4 hosts responded and are therefore "live" on the network:
+
+|No.	|IP Address|	MAC Address	Vendor / NIC|	Notes|
+|---  |----------|--------------------------|------|
+|1	|10.0.0.1|	52:54:00:12:35:00	|QEMU virtual NIC|	Gateway / router (localhost's host)|
+|2	|10.0.0.2|	-- (local interface)|	--	Scanning machine itself| (no MAC reported for self)|
+|3	|10.0.0.9|	08:00:27:51:76:01|	Oracle VirtualBox virtual NIC |Android device - port 5555/tcp (adb) open||
+|4	|10.0.0.11|	08:00:27:35:58:1A|	Oracle VirtualBox virtual NIC|	VirtualBox VM host|
+
+![image alt](
+
+ 
+Figure 1 - Zenmap ping scan (nmap -sn 10.0.0.0/24) showing 4 live hosts out of 256 addresses.
+ 
+Figure 2 - Zenmap Topology view (single host 10.0.0.2 / localhost, before the wider sweep).
+ 
+Figure 3 - Zenmap Topology view after scanning, showing localhost linked to hosts 10.0.0.2, 10.0.0.9 and 10.0.0.11.
+ 
+2. How Many Hosts Are Live in the Subnet?
+4 hosts responded as "up" out of the 256 addresses scanned in the 10.0.0.0/24 subnet, as confirmed by Nmap's summary line at the end of the ping scan: "Nmap done: 256 IP addresses (4 hosts up) scanned in 2.09 seconds."
+ 
+Figure 4 - Nmap summary confirming 4 hosts up out of 256 addresses scanned.
+3. IP Addresses of the Live Hosts
+The four live hosts identified were:
+●	10.0.0.1
+●	10.0.0.2
+●	10.0.0.9
+●	10.0.0.11
+These same four addresses also appear as nodes in the Zenmap Topology map (Figures 2 and 3), connected to the scanning host (localhost).
+ 
+4. MAC Addresses of the Live Hosts
+Nmap resolves MAC addresses for hosts on the same local Ethernet segment via ARP. The ping scan output returned the following MAC addresses for three of the four hosts (the fourth, 10.0.0.2, is the scanning machine's own interface, so Nmap does not report a MAC address for itself):
+IP Address	MAC Address	Vendor (from OUI)
+10.0.0.1	52:54:00:12:35:00	QEMU virtual NIC
+10.0.0.2	Not reported (local/self)	--
+10.0.0.9	08:00:27:51:76:01	Oracle VirtualBox virtual NIC
+10.0.0.11	08:00:27:35:58:1A	Oracle VirtualBox virtual NIC
+
+ 
+Figure 5 - MAC addresses returned by the ping scan for 10.0.0.1, 10.0.0.9 and 10.0.0.11.
+ 
