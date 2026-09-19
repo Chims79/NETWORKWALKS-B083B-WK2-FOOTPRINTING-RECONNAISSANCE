@@ -219,7 +219,7 @@ https://github.com/Chims79/NETWORKWALKS-B083B-WK2-FOOTPRINTING-RECONNAISSANCE/bl
 The information provided here is meant solely for learning and legitimate and sanctioned research purposes. Note that accessing any computer system(s) without proper consent is a criminal offense in most legal jurisdictions. Every task outlined in this document was carried out exclusively on infrastructure I personally own, networks under my own control, or systems for which I had clear, written approval to test. 
 
 
-
+---
 
 
 # 👤 Author
